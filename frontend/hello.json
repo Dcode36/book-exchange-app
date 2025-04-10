@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "genre": "Self-help",
+      "city": "Chennai",
+      "contact": "6543210987"
+    },
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "genre": "Self-improvement",
+      "city": "Mumbai",
+      "contact": "9876543210"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "city": "Pune",
+      "contact": "9123456780"
+    },
+    {
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "genre": "History",
+      "city": "Delhi",
+      "contact": "9988776655"
+    },
+    {
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "genre": "Finance",
+      "city": "Bengaluru",
+      "contact": "8899776655"
+    },
+    {
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "genre": "Finance",
+      "city": "Hyderabad",
+      "contact": "9001122334"
+    },
+    {
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "genre": "Self-help",
+      "city": "Kolkata",
+      "contact": "9112233445"
+    },
+    {
+      "title": "Ikigai",
+      "author": "Héctor García and Francesc Miralles",
+      "genre": "Philosophy",
+      "city": "Ahmedabad",
+      "contact": "9334455667"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Classic",
+      "city": "Jaipur",
+      "contact": "9445566778"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "city": "Nagpur",
+      "contact": "9556677889"
+    }
+  ]
+  

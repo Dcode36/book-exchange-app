@@ -271,13 +271,13 @@ const HomePage = () => {
                     </Box>
                     <hr />
                     <Container maxWidth="lg" sx={{ py: 5 }}>
-                        <Grid container spacing={3}>
+                        <Grid container spacing={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             {filteredBooks.length > 0 ? (
                                 filteredBooks.map((book) => {
                                     const user = JSON.parse(localStorage.getItem("user"));
                                     const isOwner = user && book.owner?._id === user._id;
                                     return (
-                                        <Grid item key={book._id} xs={12} sm={6} md={4} lg={3}>
+                                        <Grid item key={book._id} xs={12} sm={6} md={4} lg={3} sx={{ flexGrow: 1 }}>
                                             <Card
                                                 sx={{
                                                     height: "100%",
