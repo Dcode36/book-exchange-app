@@ -37,8 +37,8 @@ A full-stack MERN application that connects **Book Owners** and **Book Seekers**
 
 ## ⚙️ Technologies Used
 
-- **Frontend**: React, Next.js, Axios, Tailwind CSS
-- **Backend**: Node.js, Express.js, MongoDB, Mongoose
+- **Frontend**: React, Next.js, Axios, Material UI
+- **Backend**: Node.js, Express.js, MongoDB, Mongoose, 
 - **Authentication**: JWT (JSON Web Token), bcrypt
 - **Hosting**: Frontend & Backend hosted on **Vercel**
 - **AI Tools Used**: ChatGPT, Cursor, Claude (for faster dev & suggestions)
