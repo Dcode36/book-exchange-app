@@ -78,8 +78,8 @@ JWT_SECRET=your_jwt_secret
 PORT=3000
 ```
 
-
-###✅ Assignment Coverage
+ 
+### ✅ Assignment Coverage
 ✅ User Profiles with Role-based access
 
 ✅ Book Listings with Owner-only posting
@@ -94,7 +94,7 @@ PORT=3000
 
 ✅ Clean code and proper instructions
 
-###🕒 Time Spent
+### 🕒 Time Spent
 🧑‍💻 Approximately 2 hours 30 minutes of development time.
 
 ### 🙌 Final Thoughts
