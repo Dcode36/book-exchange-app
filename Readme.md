@@ -3,7 +3,9 @@
 A full-stack MERN application that connects **Book Owners** and **Book Seekers**, enabling them to exchange or rent books. Built with **React + Next.js**, **Node.js**, **Express**, and **MongoDB**.
 
 > ✅ All features are implemented as per the assignment — and then some. Authentication, data persistence, user role dashboards, and book status toggling are included.
+## 🔗 Live Demo
 
+👉 [Click here to view the live app](https://your-demo-link.vercel.app)
 ---
 
 ## 🚀 Features Implemented

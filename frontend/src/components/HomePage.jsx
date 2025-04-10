@@ -275,7 +275,7 @@ const HomePage = () => {
                             {filteredBooks.length > 0 ? (
                                 filteredBooks.map((book) => {
                                     const user = JSON.parse(localStorage.getItem("user"));
-                                    const isOwner = book.owner?._id === user._id;
+                                    const isOwner = user && book.owner?._id === user._id;
                                     return (
                                         <Grid item key={book._id} xs={12} sm={6} md={4} lg={3}>
                                             <Card
