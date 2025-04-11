@@ -33,9 +33,7 @@ import { Switch } from '@mui/material';
 import BlockIcon from '@mui/icons-material/Block';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import SearchOffIcon from '@mui/icons-material/SearchOff';
-
-
-
+import SummaryModal from './SummaryModal';
 
 const monochromeTheme = createTheme({
     palette: {
@@ -130,6 +128,7 @@ const monochromeTheme = createTheme({
 const HomePage = () => {
     const [books, setBooks] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [openModal, setOpenModal] = useState(false);
     const navigate = useNavigate();
     const getBooks = async () => {
         try {
@@ -172,13 +171,14 @@ const HomePage = () => {
                         {
                             !user ? (
                                 <>
-
                                     <Button color="inherit" sx={{ mr: 1 }} onClick={() => navigate('/login')}>Sign in</Button>
                                     <Button variant="outlined" color="secondary" onClick={() => navigate('/register')}>Register</Button>
                                 </>) : (
                                 <Typography variant="h6" component="div" >Logged in as {user.name} </Typography>
                             )
                         }
+
+
                     </Toolbar>
                 </AppBar>
 
@@ -263,11 +263,21 @@ const HomePage = () => {
                                 {filteredBooks.length} books found
                             </Typography>
                         </Box>
-                        {
-                            user && user.role === 'Owner' && (
-                                <Button variant="contained" color="primary" onClick={() => navigate('/add-book')}>Add Book</Button>
-                            )
-                        }
+                        <Box>
+                            {
+                                user && user.role === 'Owner' && (
+                                    <Button variant="contained" color="primary" onClick={() => navigate('/add-book')}>Add Book</Button>
+                                )
+                            }
+                            <Button
+                                color="inherit"
+                                sx={{ ml: 2 }}
+                                onClick={() => setOpenModal(true)}
+                                variant="outlined"
+                            >
+                                Generate Summary
+                            </Button>
+                        </Box>
                     </Box>
                     <hr />
                     <Container maxWidth="lg" sx={{ py: 5 }}>
@@ -603,6 +613,12 @@ const HomePage = () => {
                         </Grid>
                     </Container>
                 </Box>
+
+                <SummaryModal
+                    isOpen={openModal}
+                    onClose={() => setOpenModal(false)}
+                    books={books}
+                />
             </Box>
         </ThemeProvider>
     );

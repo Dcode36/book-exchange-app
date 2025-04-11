@@ -5,7 +5,7 @@ A full-stack MERN application that connects **Book Owners** and **Book Seekers**
 > ✅ All features are implemented as per the assignment — and then some. Authentication, data persistence, user role dashboards, and book status toggling are included.
 ## 🔗 Live Demo
 
-👉 [Click here to view the live app](https://your-demo-link.vercel.app)
+👉 [Click here to view the live app](https://book-exchange-app-lac.vercel.app/)
 ---
 
 ## 🚀 Features Implemented
