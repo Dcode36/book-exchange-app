@@ -158,6 +158,12 @@ const HomePage = () => {
 
     const token = localStorage.getItem('token');
     const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        window.location.reload();
+    }
     return (
         <ThemeProvider theme={monochromeTheme}>
             <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -174,7 +180,11 @@ const HomePage = () => {
                                     <Button color="inherit" sx={{ mr: 1 }} onClick={() => navigate('/login')}>Sign in</Button>
                                     <Button variant="outlined" color="secondary" onClick={() => navigate('/register')}>Register</Button>
                                 </>) : (
-                                <Typography variant="h6" component="div" >Logged in as {user.name} </Typography>
+                                <>
+                                    <Typography variant="h6" component="div" >Logged in as {user.name} </Typography>
+
+                                    <Button color="inherit" variant='outlined' sx={{ mx: 1 }} onClick={handleLogout}>Logout</Button>
+                                </>
                             )
                         }
 
